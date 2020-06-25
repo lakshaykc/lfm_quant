@@ -69,7 +69,7 @@ source to tensorflow.datatset object type.
 This repository was developed and is maintained by 
 [Euclidean Technologies, LLC](http://www.euclidean.com/). 
 Individual core contributors include 
-[Lakshay Kumar Chauhan](https://github.com/lakshaykc),
+[Lakshay Chauhan](https://github.com/lakshaykc),
 [John Alberg](https://github.com/euclidjda) and 
 [Zachary Lipton](https://github.com/zackchase) 
 
