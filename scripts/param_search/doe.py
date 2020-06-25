@@ -119,7 +119,7 @@ class DOE(OptimizerBaseClass):
 
         print(config_path)
         print("Train=%g" % config.train)
-        os.system("CUDA_VISIBLE_DEVICES=%s python deep_quant.py --config=%s" % (str(config.default_gpu)[-1],
+        os.system("CUDA_VISIBLE_DEVICES=%s python lfm_quant.py --config=%s" % (str(config.default_gpu)[-1],
                                                                                 config_path))
 
         valid_loss, valid_uq_loss = self._read_results(config)

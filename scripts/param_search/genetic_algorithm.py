@@ -181,7 +181,7 @@ class GeneticAlgorithm(OptimizerBaseClass):
                     elif isinstance(v, (list, tuple)):
                         f.write('--{}       '.format(k) + '-'.join('{}'.format(j) for j in v) + '\n')
 
-        os.system("CUDA_VISIBLE_DEVICES=%s python deep_quant.py --config=%s" % (str(config.default_gpu)[-1],
+        os.system("CUDA_VISIBLE_DEVICES=%s python lfm_quant.py --config=%s" % (str(config.default_gpu)[-1],
                                                                                 config_path))
 
         valid_loss, valid_loss_fcst = self._read_results(config)
